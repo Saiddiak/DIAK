@@ -32,14 +32,15 @@
     <div class="container header__inner">
       <a class="brand" href="Index.html"><span class="brand__text">DIAK Engineering</span></a>
       <button class="nav-toggle" aria-expanded="false">Menu</button>
-      <nav class="nav">
-        <a href="Index.html" data-page="Index.html">Accueil</a>
-        <a href="A%20propos" data-page="A propos">À propos</a>
-        <a href="Expertise" data-page="Expertise">Expertise</a>
-        <a href="Secteurs" data-page="Secteurs">Secteurs</a>
-        <a href="Partenaires" data-page="Partenaires">Partenaires</a>
-        <a href="Carri%C3%A8res" data-page="Carrières">Nous rejoindre</a>
-      </nav>
+     <nav class="nav">
+  <a href="index.html">Accueil</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="expertise.html">Expertise</a>
+  <a href="secteurs.html">Secteurs</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="carrieres.html">Nous rejoindre</a>
+  <a href="contact.html">Contact</a>
+</nav>
     </div>
   </header>
 
