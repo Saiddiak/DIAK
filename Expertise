@@ -1,1 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIAK Engineering — Expertise</title>
+  <link rel="stylesheet" href="Assets/css/styles.css" />
+  <script defer src="Assets/js/main.js"></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <a class="topbar__pill" href="Contact">Contactez-nous</a>
+        <span class="topbar__pill">📞 +33 0 00 00 00 00</span>
+      </div>
+      <div class="lang">
+        <button class="lang__btn" type="button">
+          <span style="width:22px;height:14px;background:#fff;border-radius:4px;display:inline-block;"></span>
+          FR ▾
+        </button>
+        <div class="lang__menu">
+          <a href="#">Français</a>
+          <a href="#">English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="Index.html"><span class="brand__text">DIAK Engineering</span></a>
+      <button class="nav-toggle" aria-expanded="false">Menu</button>
+      <nav class="nav">
+        <a href="Index.html" data-page="Index.html">Accueil</a>
+        <a href="A%20propos" data-page="A propos">À propos</a>
+        <a href="Expertise" data-page="Expertise">Expertise</a>
+        <a href="Secteurs" data-page="Secteurs">Secteurs</a>
+        <a href="Partenaires" data-page="Partenaires">Partenaires</a>
+        <a href="Carri%C3%A8res" data-page="Carrières">Nous rejoindre</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Expertise</h2>
+        <p>De l’étude à l’industrialisation : une chaîne complète et structurée.</p>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <h3>Conception & calcul</h3>
+          <p>CAD, dimensionnement, optimisation, dossiers techniques.</p>
+        </article>
+        <article class="card">
+          <h3>Méthodes & industrialisation</h3>
+          <p>Process, outillages, validation, montée en cadence.</p>
+        </article>
+        <article class="card">
+          <h3>Qualité</h3>
+          <p>AMDEC, plans de contrôle, audits, conformité.</p>
+        </article>
+      </div>
+
+      <div class="panel" style="margin-top:14px;">
+        <h3>Parlons de ton besoin</h3>
+        <p style="color:var(--muted); margin:8px 0 0;">
+          On peut structurer un périmètre, un planning et des livrables.
+        </p>
+        <a class="btn btn--primary" href="Contact" style="margin-top:12px;">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div><strong>DIAK Engineering</strong><div class="muted">© <span id="year"></span></div></div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="Contact">Contact</a>
+        <a href="Index.html">Accueil</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
 
