@@ -32,7 +32,7 @@
     <div class="container header__inner">
       <a class="brand" href="Index.html"><span class="brand__text">DIAK Engineering</span></a>
       <button class="nav-toggle" aria-expanded="false">Menu</button>
-      <nav class="nav">
+     <nav class="nav">
   <a href="index.html">Accueil</a>
   <a href="a-propos.html">À propos</a>
   <a href="expertise.html">Expertise</a>
