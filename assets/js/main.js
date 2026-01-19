@@ -1,9 +1,9 @@
 (function () {
-  // Year
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+  // Année
+  const y = document.getElementById("year");
+  if (y) y.textContent = String(new Date().getFullYear());
 
-  // Mobile menu
+  // Menu mobile
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav");
   if (toggle && nav) {
@@ -11,12 +11,10 @@
       const open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
-    nav.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
+    nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }));
   }
 
   // Lang dropdown
@@ -31,9 +29,17 @@
   }
 
   // Active link
-  const current = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const file = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   document.querySelectorAll(".nav a").forEach(a => {
     const href = (a.getAttribute("href") || "").toLowerCase();
-    if (href === current) a.classList.add("is-active");
+    if (href === file) a.classList.add("is-active");
   });
+
+  // Contact form (démo)
+  window.handleContactSubmit = function (e) {
+    e.preventDefault();
+    alert("Merci ! Message envoyé (démo).");
+    e.currentTarget.reset();
+    return false;
+  };
 })();
