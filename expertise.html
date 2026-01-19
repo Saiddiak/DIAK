@@ -12,17 +12,18 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
-        <a class="topbar__pill" href="Contact">Contactez-nous</a>
+        <a class="topbar__pill" href="contact.html">Contactez-nous</a>
         <span class="topbar__pill">📞 +33 0 00 00 00 00</span>
       </div>
+
       <div class="lang">
-        <button class="lang__btn" type="button">
-          <span style="width:22px;height:14px;background:#fff;border-radius:4px;display:inline-block;"></span>
+        <button class="lang__btn" type="button" aria-label="Changer la langue">
+          <img src="assets/img/flag-fr.svg" alt="FR" />
           FR ▾
         </button>
-        <div class="lang__menu">
-          <a href="#">Français</a>
-          <a href="#">English</a>
+        <div class="lang__menu" role="menu" aria-label="Langues">
+          <a href="#" role="menuitem"><img src="assets/img/flag-fr.svg" alt="FR" style="width:22px;border-radius:4px;"> Français</a>
+          <a href="#" role="menuitem"><img src="assets/img/flag-en.svg" alt="EN" style="width:22px;border-radius:4px;"> English</a>
         </div>
       </div>
     </div>
@@ -30,17 +31,18 @@
 
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="Index.html"><span class="brand__text">DIAK Engineering</span></a>
-      <button class="nav-toggle" aria-expanded="false">Menu</button>
-     <nav class="nav">
-  <a href="index.html">Accueil</a>
-  <a href="a-propos.html">À propos</a>
-  <a href="expertise.html">Expertise</a>
-  <a href="secteurs.html">Secteurs</a>
-  <a href="partenaires.html">Partenaires</a>
-  <a href="carrieres.html">Nous rejoindre</a>
-  <a href="contact.html">Contact</a>
-</nav>
+      <a class="brand" href="index.html"><img src="assets/img/logo-placeholder.svg" alt="DIAK Engineering" /></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="partenaires.html">Partenaires</a>
+        <a href="carrieres.html">Nous rejoindre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
@@ -71,7 +73,7 @@
         <p style="color:var(--muted); margin:8px 0 0;">
           On peut structurer un périmètre, un planning et des livrables.
         </p>
-        <a class="btn btn--primary" href="Contact" style="margin-top:12px;">Contact</a>
+        <a class="btn btn--primary" href="contact.html" style="margin-top:12px;">Contact</a>
       </div>
     </div>
   </section>
@@ -80,12 +82,11 @@
     <div class="container footer__inner">
       <div><strong>DIAK Engineering</strong><div class="muted">© <span id="year"></span></div></div>
       <div style="display:flex; gap:14px; flex-wrap:wrap;">
-        <a href="Contact">Contact</a>
-        <a href="Index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Accueil</a>
       </div>
     </div>
   </footer>
 
 </body>
 </html>
-
