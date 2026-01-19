@@ -1,1 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIAK Engineering — Accueil</title>
+  <link rel="stylesheet" href="Assets/css/styles.css" />
+  <script defer src="Assets/js/main.js"></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <a class="topbar__pill" href="Contact">Contactez-nous</a>
+        <span class="topbar__pill">📞 +33 0 00 00 00 00</span>
+      </div>
+
+      <div class="lang">
+        <button class="lang__btn" type="button" aria-label="Changer la langue">
+          <span style="width:22px;height:14px;background:#fff;border-radius:4px;display:inline-block;"></span>
+          FR ▾
+        </button>
+        <div class="lang__menu" role="menu" aria-label="Langues">
+          <a href="#" role="menuitem">Français</a>
+          <a href="#" role="menuitem">English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="Index.html" aria-label="DIAK Engineering">
+        <!-- Remplace plus tard par ton logo -->
+        <span class="brand__text">DIAK Engineering</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="Index.html" data-page="Index.html">Accueil</a>
+        <a href="A%20propos" data-page="A propos">À propos</a>
+        <a href="Expertise" data-page="Expertise">Expertise</a>
+        <a href="Secteurs" data-page="Secteurs">Secteurs</a>
+        <a href="Partenaires" data-page="Partenaires">Partenaires</a>
+        <a href="Carri%C3%A8res" data-page="Carrières">Nous rejoindre</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <span class="kicker">Ingénierie • Industrie • Fiabilité</span>
+        <h1>Accélérer vos projets grâce à l’ingénierie orientée résultat</h1>
+        <p class="lead">
+          DIAK Engineering accompagne ses clients de la conception à la mise en production :
+          expertise technique, qualité, méthodes et exécution.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="Expertise">Découvrir notre expertise</a>
+          <a class="btn btn--ghost" href="Contact">Demander un devis</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Bloc visuel">
+        <div class="hero-card__media" data-slide></div>
+        <div class="hero-card__media" data-slide style="display:none;"></div>
+        <div class="hero-card__media" data-slide style="display:none;"></div>
+        <div class="hero-card__body">
+          <p class="hero-card__title"><strong>Solutions</strong> sur mesure</p>
+          <p class="hero-card__text">Process, conception, industrialisation, support terrain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Ce que nous faisons</h2>
+        <p>Une approche claire : cadrer, concevoir, sécuriser la qualité, livrer.</p>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <h3>Conception & calcul</h3>
+          <p>Études, modélisation, dimensionnement et optimisation.</p>
+          <a href="Expertise">En savoir plus →</a>
+        </article>
+        <article class="card">
+          <h3>Industrialisation</h3>
+          <p>Méthodes, outillages, validation process, mise en production.</p>
+          <a href="Expertise">En savoir plus →</a>
+        </article>
+        <article class="card">
+          <h3>Qualité & conformité</h3>
+          <p>AMDEC, plans de contrôle, documentation, audits.</p>
+          <a href="Expertise">En savoir plus →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container split">
+      <div>
+        <div class="section__head">
+          <h2>Pourquoi DIAK Engineering</h2>
+          <p>Une équipe orientée exécution et amélioration continue.</p>
+        </div>
+        <ul class="bullets">
+          <li>Réactivité et proximité</li>
+          <li>Culture industrielle et qualité</li>
+          <li>Livrables propres et traçables</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Besoin d’un contact rapide ?</h3>
+        <p style="color:var(--muted); margin-top:6px;">
+          Décris ton besoin, on te répond avec une proposition structurée.
+        </p>
+        <a class="btn btn--primary" href="Contact" style="margin-top:10px;">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>DIAK Engineering</strong>
+        <div class="muted">© <span id="year"></span> — Tous droits réservés.</div>
+      </div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="Contact">Contact</a>
+        <a href="Partenaires">Partenaires</a>
+        <a href="Carri%C3%A8res">Carrières</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
 
