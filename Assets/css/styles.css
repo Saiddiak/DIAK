@@ -1,1 +1,107 @@
+:root{
+  --bg:#ffffff;
+  --text:#0b1220;
+  --muted:#556070;
+  --line:#e6eaf0;
+  --brand:#0b5ed7;
+  --brand2:#0aa2c0;
+  --shadow: 0 10px 30px rgba(16,24,40,.10);
+  --radius: 16px;
+  --container: 1180px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.55;
+}
+
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; height:auto; display:block; }
+
+.container{
+  width:min(var(--container), 92%);
+  margin:0 auto;
+}
+
+/* Top bar (contact + langue) */
+.topbar{
+  background:#0b1220;
+  color:#fff;
+  font-size:.92rem;
+}
+.topbar__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:8px 0;
+}
+.topbar__left{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.topbar__pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;
+  color:#fff;
+}
+.topbar__pill:hover{ border-color: rgba(255,255,255,.35); }
+
+.lang{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.lang__btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border:1px solid rgba(255,255,255,.14);
+  background:transparent;
+  color:#fff;
+  border-radius:999px;
+  cursor:pointer;
+}
+.lang__btn img{ width:22px; height:auto; border-radius:4px; }
+.lang__menu{
+  position:absolute;
+  right:0;
+  top:42px;
+  background:#fff;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow: var(--shadow);
+  min-width:180px;
+  padding:6px;
+  display:none;
+  z-index:50;
+}
+.lang__menu a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 10px;
+  border-radius:10px;
+}
+.lang__menu a:hover{ background:#f5f7fb; }
+.lang.is-open .lang__menu{ display:block; }
+
+/* Header */
+.header{
+  position:sticky;
+  top:
 
