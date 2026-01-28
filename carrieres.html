@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DIAK Engineering — Nous rejoindre</title>
+  <title>DIAK Engineering — Carrières</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
 
+  <!-- Topbar -->
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
@@ -21,24 +22,25 @@
           <img src="assets/img/flag-fr.svg" alt="FR" />
           FR ▾
         </button>
-        <div class="lang__menu" role="menu" aria-label="Langues">
-          <a href="#" role="menuitem"><img src="assets/img/flag-fr.svg" alt="FR" style="width:22px;border-radius:4px;"> Français</a>
-          <a href="#" role="menuitem"><img src="assets/img/flag-en.svg" alt="EN" style="width:22px;border-radius:4px;"> English</a>
+        <div class="lang__menu">
+          <a href="#"><img src="assets/img/flag-fr.svg" alt="FR" style="width:22px;border-radius:4px;"> Français</a>
+          <a href="#"><img src="assets/img/flag-en.svg" alt="EN" style="width:22px;border-radius:4px;"> English</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="index.html">
-      <img src="assets/img/logo-placeholder.svg" alt="Logo DIAK">
-      <span class="brand__text">DIAK Engineering</span>
+        <img src="assets/img/logo-placeholder.svg" alt="Logo DIAK">
+        <span class="brand__text">DIAK Engineering</span>
       </a>
-        </a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
 
-      <nav class="nav" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-expanded="false">Menu</button>
+
+      <nav class="nav">
         <a href="index.html">Accueil</a>
         <a href="a-propos.html">À propos</a>
         <a href="expertise.html">Expertise</a>
@@ -50,43 +52,59 @@
     </div>
   </header>
 
+  <!-- Contenu -->
   <section class="section">
     <div class="container">
+
       <div class="section__head">
-        <h2>Nous rejoindre</h2>
-        <p>Rejoins une équipe orientée industrie, qualité et impact.</p>
+        <h2>Carrières</h2>
+        <p>Rejoignez une équipe orientée ingénierie, qualité et résultats.</p>
       </div>
 
-      <div class="grid cards">
-        <article class="card">
-          <h3>Ingénieur Méthodes</h3>
-          <p>Industrialisation, process, amélioration continue.</p>
-          <a href="contact.html">Postuler →</a>
-        </article>
-        <article class="card">
-          <h3>Ingénieur Qualité</h3>
-          <p>Plans de contrôle, conformité, audits.</p>
-          <a href="contact.html">Postuler →</a>
-        </article>
-        <article class="card">
-          <h3>Chef de Projet</h3>
-          <p>Planification, coordination, livrables.</p>
-          <a href="contact.html">Postuler →</a>
-        </article>
-      </div>
-
-      <div class="panel" style="margin-top:14px;">
-        <h3>Candidature</h3>
-        <p style="color:var(--muted); margin:8px 0 0;">
-          Envoie ton CV et une courte présentation via la page Contact.
+      <!-- Offres -->
+      <div class="panel" style="margin-bottom:18px;">
+        <h3>Offres en cours</h3>
+        <p class="muted" style="margin-top:6px;">
+          Aucune offre n’est ouverte pour le moment.
+          <br>
+          Nous étudions cependant avec attention les candidatures spontanées.
         </p>
       </div>
+
+      <!-- Candidature spontanée -->
+      <div class="form">
+        <h3>Candidature spontanée</h3>
+        <p class="muted" style="margin-top:6px;">
+          Présentez-vous brièvement et joignez votre CV.
+        </p>
+
+        <form onsubmit="handleContactSubmit(event)">
+          <label>
+            Joindre votre CV
+            <input type="file" name="cv" accept=".pdf,.doc,.docx" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Votre message, expérience, disponibilité…"></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit" style="margin-top:10px;">
+            Envoyer ma candidature
+          </button>
+        </form>
+      </div>
+
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div><strong>DIAK Engineering</strong><div class="muted">© <span id="year"></span></div></div>
+      <div>
+        <strong>DIAK Engineering</strong>
+        <div class="muted">© <span id="year"></span></div>
+      </div>
       <div style="display:flex; gap:14px; flex-wrap:wrap;">
         <a href="contact.html">Contact</a>
         <a href="index.html">Accueil</a>
