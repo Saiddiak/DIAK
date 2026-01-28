@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- Topbar -->
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
@@ -29,12 +30,14 @@
     </div>
   </div>
 
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="index.html">
-      <img src="assets/img/logo-placeholder.svg" alt="Logo DIAK">
-      <span class="brand__text">DIAK Engineering</span>
+        <img src="assets/img/logo-placeholder.svg" alt="Logo DIAK">
+        <span class="brand__text">DIAK Engineering</span>
       </a>
+
       <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
 
       <nav class="nav" aria-label="Navigation principale">
@@ -49,46 +52,104 @@
     </div>
   </header>
 
+  <!-- Contenu -->
   <section class="section">
     <div class="container">
+
       <div class="section__head">
         <h2>Expertise</h2>
-        <p>De l’étude à l’industrialisation : une chaîne complète et structurée.</p>
+        <p>De l’étude à l’industrialisation : une chaîne complète, structurée et orientée résultat.</p>
       </div>
 
       <div class="grid cards">
         <article class="card">
           <h3>Conception & calcul</h3>
-          <p>CAD, dimensionnement, optimisation, dossiers techniques.</p>
+          <p>Conception mécanique, modélisation CAD, dimensionnement et dossiers techniques.</p>
         </article>
+
         <article class="card">
           <h3>Méthodes & industrialisation</h3>
-          <p>Process, outillages, validation, montée en cadence.</p>
+          <p>Définition des process, outillages, validation industrielle et montée en cadence.</p>
         </article>
+
         <article class="card">
-          <h3>Qualité</h3>
-          <p>AMDEC, plans de contrôle, audits, conformité.</p>
+          <h3>Qualité & conformité</h3>
+          <p>AMDEC, plans de contrôle, audits qualité et conformité réglementaire.</p>
         </article>
       </div>
 
       <div class="panel" style="margin-top:14px;">
-        <h3>Parlons de ton besoin</h3>
+        <h3>Parlons de votre besoin</h3>
         <p style="color:var(--muted); margin:8px 0 0;">
-          On peut structurer un périmètre, un planning et des livrables.
+          Nous pouvons structurer un périmètre clair, un planning réaliste et des livrables adaptés.
         </p>
-        <a class="btn btn--primary" href="contact.html" style="margin-top:12px;">Contact</a>
+        <a class="btn btn--primary" href="contact.html" style="margin-top:12px;">
+          Nous contacter
+        </a>
       </div>
+
     </div>
   </section>
 
+  <!-- Footer PRO -->
   <footer class="footer">
+
     <div class="container footer__inner">
-      <div><strong>DIAK Engineering</strong><div class="muted">© <span id="year"></span></div></div>
-      <div style="display:flex; gap:14px; flex-wrap:wrap;">
-        <a href="contact.html">Contact</a>
-        <a href="index.html">Accueil</a>
+
+      <div>
+        <strong>DIAK Engineering</strong>
+        <p class="muted" style="margin-top:6px; max-width:260px;">
+          Cabinet d’ingénierie orienté industrie, qualité et performance opérationnelle.
+        </p>
+        <div class="muted" style="margin-top:10px;">
+          © <span id="year"></span> — Tous droits réservés
+        </div>
+      </div>
+
+      <div>
+        <strong>Navigation</strong>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="expertise.html">Expertise</a></li>
+          <li><a href="secteurs.html">Secteurs</a></li>
+          <li><a href="carrieres.html">Carrières</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <strong>Secteurs</strong>
+        <ul>
+          <li>Aéronautique</li>
+          <li>Défense</li>
+          <li>Spatial</li>
+          <li>Ferroviaire</li>
+          <li>Énergies</li>
+          <li>Automobile</li>
+          <li>Industrie</li>
+        </ul>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <ul>
+          <li>📍 France</li>
+          <li>📞 +33 0 00 00 00 00</li>
+          <li>✉️ contact@diak-engineering.com</li>
+          <li><a href="#" aria-label="LinkedIn DIAK Engineering">LinkedIn</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <div class="muted">Mentions légales</div>
+        <div class="muted">Politique de confidentialité</div>
       </div>
     </div>
+
   </footer>
 
 </body>
