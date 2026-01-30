@@ -52,10 +52,19 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero__inner">
+  <!-- HERO SLIDER -->
+  <section class="hero hero--slider">
 
+    <div class="hero-slider" aria-hidden="true">
+      <div class="hero-slide is-active" style="background-image:url('assets/img/hero-01-electromagnetics.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-02-electric-motor.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-03-analysis-graphs.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-04-consulting.jpg')"></div>
+    </div>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero__inner hero__content">
       <div>
         <span class="kicker">Électromagnétisme • Machines électriques • Outils de calcul</span>
         <h1>Accélérer vos projets grâce à une expertise électromagnétique orientée résultat</h1>
@@ -70,12 +79,12 @@
           <a class="btn btn--ghost" href="contact.html">Parler à un expert</a>
         </div>
 
-        <p style="color:var(--muted); margin:12px 0 0;">
+        <p style="color:#e5e7eb; margin:12px 0 0;">
           Intervention <strong>sur site</strong> (Caen / France) ou <strong>à distance</strong>.
         </p>
       </div>
 
-      <div class="hero-card">
+      <div class="hero-card" style="background:rgba(255,255,255,.95);">
         <div class="hero-card__media"></div>
         <div class="hero-card__body">
           <p class="hero-card__title"><strong>3 piliers</strong> d’intervention</p>
