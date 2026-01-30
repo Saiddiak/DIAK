@@ -43,3 +43,16 @@
     return false;
   };
 })();
+// HERO SLIDER
+(function(){
+  const slides = document.querySelectorAll('.hero-slide');
+  if(!slides.length) return;
+
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('is-active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('is-active');
+  }, 5000); // 5 secondes
+})();
